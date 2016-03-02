@@ -19,8 +19,7 @@ Include the stylesheet on your document's
 
 ----
 ## Documentation
-[Check out all the documentation here](http://nickjazz.github.io/sora-doc/)
-[Download](https://github.com/nickjazz/sora)
+[Check out all the documentation here](http://nickjazz.github.io/sora-site)
 
 
 ----
