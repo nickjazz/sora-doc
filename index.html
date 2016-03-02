@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- Web config-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sora</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100">
+
+    <!-- DEMO CSS-->
+    <link rel="stylesheet" href="assets/stylesheets/demo.css">
+    <link rel="stylesheet" href="assets/stylesheets/lib/prism.css">
+
+    <!-- Framework CSS-->
+    <link rel="stylesheet" href="assets/stylesheets/sora.css">
+
+    <!-- Framework dependency-->
+    <script src="assets/scripts/ResizeSensor.js"></script>
+    <script src="assets/scripts/ElementQueries.js"></script>
+
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <h1 class="logo">SORA</h1>
+        <p class="sub">A new way of thinking about responsive web design</p>
+        <p class="sub">Elemental Queries Responsive grid system, Adjusting Elements to the Container, Not Viewport</p>
+      </div>
+    </div>
+    <div id="menu">
+      <ul class="demo-menu">
+        <li class="logo-nav"> <a href="#home">SORA</a></li>
+        <li><a href="#getting-started">Getting started</a></li>
+        <li><a href="#make-it-matter">Make it matter</a></li>
+        <li><a href="#grid">Grids Units Sizes</a></li>
+        <li><a href="#responsive">Responsive</a></li>
+        <li><a href="#media-queries">Media Queries</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div id="home"></div>
+      <div id="getting-started" class="demo-wrapper">
+        <h2>Start</h2>
+        <p>Simple example</p>
+        <p>1, Add scripts and sora.css</p>
+        <pre data-src="markups/1-1.html"></pre>
+        <p>2, HTML Markup</p>
+        <div class="row row-parent">
+          <div class="col-p-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-p-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-p-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-p-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-p-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+        </div>
+        <pre data-src="markups/1.html"></pre>
+      </div>
+      <div id="make-it-matter" class="demo-wrapper">
+        <h2>Make it matter</h2>
+        <h4>The trouble with media queries</h4><a href="#" class="js-demo-1-btn btn">Change layout</a>
+        <div class="row">
+          <div class="col-md-1-10 js-demo-1_r">
+            <div class="demo-grid-list-item">
+              <div class="row">
+                <div class="col-md-12-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-12-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-12-12">
+                  <div class="demo-grid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9-10 js-demo-2_l">
+            <div class="demo-grid-list-item">
+              <div class="row">
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-md-3-12">
+                  <div class="demo-grid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4>Layout should be follow parent element</h4><a href="#" class="js-demo-1-btn btn">Change layout</a>
+        <div class="row">
+          <div class="col-md-1-10 js-demo-1_r">
+            <div class="demo-grid-list-item">
+              <div class="row row-parent">
+                <div class="col-p-sm-4-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-sm-4-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-sm-4-12">
+                  <div class="demo-grid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9-10 js-demo-2_l">
+            <div class="demo-grid-list-item">
+              <div class="row row-parent">
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+                <div class="col-p-md-2-12">
+                  <div class="demo-grid"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="grid" class="demo-wrapper">
+        <h2>10ths and 12ths Grids Units Sizes</h2>
+        <p>The class name priority is 12ths higher then 10ths, so if you write two different unit class, will read 12ths first.</p>
+        <div class="container">
+          <div class="row row-parent">
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+            <div class="col col-p-xs-1-12">
+              <div class="demo-grid">1-12</div>
+            </div>
+          </div>
+          <div class="row row-parent">
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+            <div class="col col-p-xs-1-10">
+              <div class="demo-grid">1-10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="responsive" class="demo-wrapper">
+        <h2>Responsive Grid</h2>
+        <pre data-src="markups/2.scss"></pre>
+      </div>
+      <div id="media-queries" class="demo-wrapper">
+        <h2>Need Media Queries Grid ?</h2>
+        <p>Yes, Sora also support media queries base grid (like bootstrap grid)</p>
+        <div class="row">
+          <div class="col-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+          <div class="col-md-2-10">
+            <div class="demo-grid"></div>
+          </div>
+        </div>
+        <pre data-src="markups/2.html"></pre>
+      </div>
+      <div class="demo-wrapper">
+        <h2>Framework dependency</h2>
+        <p> <a href="https://marcj.github.io/css-element-queries/">CSS-Element-Queries</a></p>
+      </div>
+    </div>
+    <script src="assets/scripts/prism.js"></script>
+    <script src="assets/scripts/jquery-1.11.3.min.js"></script>
+    <script src="assets/scripts/demo.js"></script>
+  </body>
+</html>
